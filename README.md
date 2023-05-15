@@ -18,7 +18,7 @@
 ```
 This repository will be your workspace and you should work on the tasks here.
 ## Task 1
-Create a module named 'files' with the following criteria:
+Create a module named 'files' that:
 - should contain 3 variables that are used in the resources
 - should generate atleast 1 output
 - should be able to create X number of files based on a variable
@@ -55,7 +55,7 @@ Create a module named 'read' that
         └── outputs.tf
 ```
 - wire together this module with the 'files' module in a way that it uses atleast one of the outputs from the 'files' module
-- the output of the 'read' module should be the input received from the 'files' module with a suffix of "read-"
+- the output of the 'read' module should be the input received from the 'files' module with a prefix of "read-"
 ## Task 3
 Create another module named 'write' that
 - should contain 5 variables named: `answer_1`, `answer_2`, ..., `answer_5` 
