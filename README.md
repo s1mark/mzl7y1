@@ -11,8 +11,8 @@
   - commit your changes to main. At this point you should have the following struture
 ```
 .
-├── .github/
-│   └── workflows/
+├── .github
+│   └── workflows
 │       └── terraform.yml
 └── .gitignore
 ```
@@ -25,8 +25,8 @@ Create a module named 'files' with the following criteria:
 - create the codebase in the modules/files folder:
 ```
 .
-└── modules/
-    └── files/
+└── modules
+    └── files
         │── main.tf
         │── variables.tf
         └── outputs.tf
@@ -35,9 +35,10 @@ Create a module named 'files' with the following criteria:
 ```
 .
 │── main.tf
-└── modules/
-    └── files/
+└── modules
+    └── files
         │── main.tf
         │── variables.tf
         └── outputs.tf
 ```
+- for reference your can check https://github.com/s1mark/mzl7y1
