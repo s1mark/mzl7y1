@@ -67,7 +67,7 @@ Create another module named 'write' that
         │── variables.tf
         └── outputs.tf
 ```
-- try to answer to the following questions
+Try to answer to the following questions by using the `answer_x` variables
 - Which lifecycle phase is mandatory to interact with resources?
   - state
   - init
