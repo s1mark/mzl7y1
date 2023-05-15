@@ -42,3 +42,56 @@ Create a module named 'files' with the following criteria:
         └── outputs.tf
 ```
 - for reference your can check https://github.com/s1mark/mzl7y1
+## Task 2
+Create a module named 'read' that
+- should contain atleast 1 variable
+- should generate atleast 1 output
+- structure
+```
+.
+└── modules
+    └── read
+        │── variables.tf
+        └── outputs.tf
+```
+- wire together this module with the 'files' module in a way that it uses atleast one of the outputs from the 'files' module
+- the output of the 'read' module should be the input received from the 'files' module with a suffix of "read-"
+## Task 3
+Create another module named 'write' that
+- should contain 5 variables named: `answer_1`, `answer_2`, ..., `answer_5` 
+- should output all variables
+- read the variables from a file named `answers.tfvars`
+```
+.
+└── modules
+    └── write
+        │── answers.tfvars
+        │── variables.tf
+        └── outputs.tf
+```
+- try to answer to the following questions
+- Which lifecycle phase is mandatory to interact with resources?
+  - state
+  - init
+  - plan
+  - import
+- Which is not a valid attribute type?
+  - string
+  - int
+  - tuple
+  - object
+- Which is an invalid term?
+  - for_each
+  - count
+  - while
+  - if
+- What is the cleanest way to define dependency between two resources?
+  - put them in the same codebase
+  - using meta-argument
+  - using output values
+  - put them in the same module
+- Which method of attribute definition has the highest precedence?
+  - using -var flag
+  - variable's default value
+  - exporting  TF_VAR_
+  - using .tfvars file 
