@@ -2,7 +2,7 @@
 ## General info
 - Only the contents of your repository's `main` branch that counts
 - You will be able to check your code easily with the help of the configured pipeline
-- It is advised to us new branches and later on merge them to `main` but it is not mandatory.
+- It is advised to use new branches and later on merge them to `main` but it is not mandatory.
 ## Task 0 - Create your workspace
 - Create your own github project. It's name should be your neptun code.
 - Invite me as a collaborator to your repo: Settings / Collaborators / Add people (simark2357@gmail.com). Also please send me an email with your repo link.
