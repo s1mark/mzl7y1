@@ -10,8 +10,10 @@
   - In case of any doubt you can use this [terraform.yml](https://github.com/s1mark/mzl7y1/blob/31674b2071135266cc112cff2f66fa4915e8d871/.github/workflows/terraform.yml) for reference
   - commit your changes to main
 At this point you should have the following struture
+```
 .
 ├── .github/
 │   └── workflows/
 │       └── terraform.yml
 └── .gitignore
+```
