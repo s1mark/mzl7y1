@@ -58,12 +58,12 @@ Create a module named 'read' that
 Create another module named 'write' that
 - should contain 5 variables named: `answer_1`, `answer_2`, ..., `answer_5` 
 - should output all variables
-- read the variables from a file named `answers.tfvars`
+- read the variables from a file named `terraform.tfvars`
 ```
 .
+│── terraform.tfvars
 └── modules
     └── write
-        │── answers.tfvars
         │── variables.tf
         └── outputs.tf
 ```
