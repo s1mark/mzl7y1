@@ -96,6 +96,7 @@ Try to answer to the following questions by using the `answer_x` variables
 ## Task 4
 Create a module named 'data' that
 - reads one of the generated files from the 'files' module with the use of the `local_file` datasource
+- these modules should depend on eachother by using the `depends_on` meta-argument
 - should dynamically get the path of the generated file as a variable
 - should output the `id` of the file
 ```
