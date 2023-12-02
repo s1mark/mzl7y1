@@ -1,0 +1,26 @@
+on:
+  issues:
+    types:
+      - opened
+  pull_request:
+    types:
+      - opened
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  assign-issue-to-user:
+    name: Assign to user
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign issue to user
+        uses: pozil/auto-assign-issue@v1
+        # https://github.com/marketplace/actions/auto-assign-issue
+        with:
+          assignees: ${{ github.actor }}
+          numOfAssignee: 1
+          allowSelfAssign: true
+          abortIfPreviousAssignees: true
